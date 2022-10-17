@@ -1,0 +1,65 @@
+.banner {
+    background: url('/img/banner-bg.jpg');
+    min-height: 71.6rem;
+    background-position: 55% 0;
+    background-repeat: contain;
+
+    &__wrapper {
+        max-width: 78rem;
+        padding: 17rem 3rem 21rem;
+    }
+
+    &__title {
+        padding: 0 0 2.8rem 0;
+        font-weight: $bold;
+        font-size: 6.8rem;
+        line-height: 7.5rem;
+        color: $white;
+    }
+
+    &__text {
+        padding: 0 0 5.2rem 0;
+        font-weight: $medium;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: $white;
+    }
+
+    &__links {
+        gap: 3.2rem;
+        justify-content: flex-start;
+    }
+
+    &__link {
+        padding: 2rem 4rem;
+        backdrop-filter: blur(2.5px);
+        border: 1px solid;
+        border-radius: 10rem;
+        font-weight: $medium;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: $white;
+    }
+
+    &__link:first-child {
+        border-color: $orange;
+        background: $orange;
+
+        &:hover {
+            border-color: $orange-hover;
+            background: $orange-hover;
+        }
+
+    }
+
+    &__link:not(:first-child) {
+        backdrop-filter: blur(2.5px);
+        background: rgba(255, 255, 255, 0.2);
+
+        &:hover {
+            border-color: $orange;
+            background: none;
+            color: $orange;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@include desktop_sm {
+    .digital {
+        padding: 6rem 0;
+
+        &__content {
+            grid-template-columns: none;
+            justify-content: center;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}
+
+@include tablet {
+    
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+    .container {
+        width: 576px;
+    }
+
+    .digital {
+        padding: 3rem 0;
+
+        &__content {
+            gap: 2rem;
+        }
+
+        &__list {
+            min-height: 50rem;
+            
+        }
+
+        &__title {
+            padding: 0 0 3rem 0;
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+        }
+
+        &__span {
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+        }
+    }
+}
+
+@include mobile {
+
+    .container {
+        width: 320px;
+    }
+
+    .digital {
+
+        &__wrapper {
+            max-width: 26rem;
+            padding: 2rem 1rem;
+        }
+
+        &__link {
+            font-size: 1.4rem;
+        }
+    }
+}

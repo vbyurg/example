@@ -1,0 +1,106 @@
+.digital {
+    padding: 12rem 0;
+    
+
+    &__content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+
+    &__list {
+        min-height: 48.7rem;
+        
+    }
+
+    &__list:first-child {
+        background: url('/img/digital-bg-1.png');
+        // background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__list:nth-child(2) {
+        background: url('/img/digital-bg-2.png');
+        // background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__list:nth-child(3) {
+        background: url('/img/digital-bg-3.png');
+        // background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__wrapper {
+        max-width: 29.6rem;
+        padding: 4rem 3.2rem;
+    }
+
+    &__title {
+        padding: 0 0 6rem 0;
+        font-weight: $bold;
+        font-size: 3.8rem;
+        line-height: 4.6rem;
+        color: $typography;
+    }
+
+    &__span {
+        font-weight: $bold;
+        font-size: 3.8rem;
+        line-height: 4.6rem;
+        color: $orange;
+    }
+
+    &__headline {
+        padding: 0 0 2.8rem 0;
+        font-weight: $bold;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: $white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    &__text {
+        & .text__begin {
+            padding: 2rem 0;
+            font-weight: $medium;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $white;
+        }
+
+
+        & .text__small {
+            padding: 2rem 0 2.8rem 0;
+            font-size: 1.4rem;
+            font-weight: $medium;
+            line-height: 2rem;
+            color: $white;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.5;
+        }
+
+        & .text__end {
+            padding: 0 0 3.6rem;
+            font-weight: $medium;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $white;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 1.6rem 6rem;
+        font-weight: $medium;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: center;
+        color: $orange;
+        border: 1px solid $orange;
+        border-radius: 100px
+    }
+
+
+}

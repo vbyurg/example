@@ -1,0 +1,94 @@
+.footer {
+    background: $gray;
+
+    &__content {
+        padding: 12rem 3rem 8rem;
+        gap: 17rem;
+        align-items: flex-start;
+        align-self: start;
+    }
+
+    &__logo {
+        padding: 0 0 6rem 0;
+    }
+
+    &__region {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    &__phone,
+    &__adress {
+        font-weight: $medium;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $white;
+    }
+
+    &__info {
+        font-weight: $medium;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $white;
+        opacity: 0.5;
+    }
+
+    &__company {
+        padding: 1.2rem 0 0 0;
+    }
+
+    &__social {
+        padding: 2.8rem 0 0 0;
+        gap: 2rem;
+        justify-content: flex-start;
+    }
+
+    &__menu {
+        gap: 10.7rem;
+    }
+
+    &__item {
+        align-items: flex-start;
+        align-self: start;
+
+        & p {
+            display: block;
+            padding: 0 0 2.4rem 0;
+            font-weight: $medium;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: $white;
+            opacity: 0.5;
+        }
+
+        & a {
+            font-weight: $medium;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $white;
+        }
+    }
+}
+
+.region {
+    padding: 0 0 2rem 0;
+
+    &__text {
+        font-weight: $medium;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $white;
+        opacity: 0.5;
+        padding-bottom: 2px;
+    }
+
+    &__city {
+        font-weight: $medium;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        color: $white;
+        padding-bottom: 2px;
+        border-bottom: 1px solid $white;
+
+    }
+}

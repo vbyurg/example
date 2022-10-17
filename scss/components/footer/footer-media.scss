@@ -1,0 +1,154 @@
+@include desktop_sm {
+    .container {
+        max-width: 99.2rem;
+    }
+
+    .footer {
+        &__content {
+            padding: 12rem 3rem 8rem;
+            gap: 10rem;
+        }
+
+        &__menu {
+            gap: 3rem;
+        }
+    }
+}
+
+
+@include laptop {
+    .container {
+        width: 76.8rem;
+    }
+
+    .footer {
+
+        &__content {
+            padding: 6rem 3rem 6rem;
+            gap: 3rem;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            align-self: start;
+        }
+
+        &__contact {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 0 auto;
+            justify-items: center;
+            align-items: center;
+        }
+
+        &__logo {
+            padding: 0;
+        }
+
+        &__region {
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+
+        &__company {
+            padding: 0;
+            text-align: center;
+        }
+
+        &__social {
+            padding: 0;
+            gap: 2rem;
+            justify-content: flex-start;
+        }
+
+        &__menu {
+            gap: 2rem;
+        }
+
+    }
+
+    .region {
+        padding: 0;
+    }
+}
+
+@include tablet {
+
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+    .container {
+        width: 576px;
+    }
+
+    .footer {
+
+        &__content {
+            padding: 3rem 0 3rem;
+        }
+
+        &__item {
+
+            & a {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__phone,
+        &__adress {
+            font-size: 1.2rem;
+        }
+
+        &__info {
+            font-size: 1.2rem;
+        }
+    }
+
+    .region {
+
+        &__text {
+            font-size: 1.2rem;
+        }
+    
+        &__city {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+
+@include mobile {
+
+    .container {
+        width: 320px;
+    }
+
+    .footer {
+
+        &__content {
+            padding: 2rem;
+            gap: 3rem;
+            flex-direction: column;
+        }
+
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 0 ;
+            justify-items: flex-start;
+            align-items: flex-start;
+        }
+
+        &__menu {
+            flex-direction: column;
+        }
+
+        &__company {
+            padding: 0;
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@include laptop {
+    .container {
+        width: 76.7rem;
+    }
+
+    .banner {
+        min-height: 60rem;
+        background-position: 60% 0;
+
+        &__wrapper {
+            max-width: 70rem;
+            padding: 9rem 3rem 9rem;
+        }
+
+        &__title {
+            padding: 0 0 2.8rem 0;
+            font-size: 6rem;
+            line-height: 6rem;
+        }
+
+        &__links {
+            gap: 3.2rem;
+            justify-content: flex-start;
+        }
+
+        &__link {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@include tablet {
+    
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+    .container {
+        width: 576px;
+    }
+
+    .banner {
+        min-height: 40rem;
+        background-position: 60% 0;
+
+        &__wrapper {
+            max-width: 70rem;
+            padding: 4rem 3rem 4rem;
+        }
+
+        &__title {
+            padding: 0 0 2.8rem 0;
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+
+        &__text {
+            padding: 0 0 3.2rem 0;
+        }
+
+        &__links {
+            gap: 2rem;
+            justify-content: flex-start;
+        }
+
+        &__link {
+            padding: 1.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@include mobile {
+
+    .container {
+        width: 320px;
+    }
+
+    .banner {
+        min-height: 40rem;
+        background-position: 60% 0;
+        background-size: cover;
+
+        &__wrapper {
+            max-width: 30rem;
+            padding: 2rem 2rem;
+        }
+
+        &__title {
+            padding: 0 0 2.8rem 0;
+            font-size: 3rem;
+            line-height: 3rem;
+            text-align: center;
+        }
+
+        &__text {
+            padding: 0 0 2.2rem 0;
+            text-align: center;
+        }
+
+        &__links {
+            gap: 2rem;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        &__link {
+            padding: 1.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}

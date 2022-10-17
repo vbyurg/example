@@ -1,0 +1,36 @@
+.advantage {
+
+    padding: 0 0 12rem;
+
+    &__title {
+        padding: 0 0 6rem 0;
+        font-weight: $bold;
+        font-size: 3.8rem;
+        line-height: 4.6rem;
+        color: $typography;
+    }
+
+    &__grid {
+        text-align: center;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        align-items: center;
+    }
+
+    &__wrapper {
+        padding: 1.5rem 4.5rem;
+    }
+
+    &__icon {
+        padding: 2.2rem 0;
+    }
+
+    &__text {
+        display: block;
+        font-weight: $medium;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: $gray;
+    }
+}

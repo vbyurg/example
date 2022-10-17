@@ -1,0 +1,229 @@
+@include desktop_sm {
+    .container {
+        width: 99.2rem;
+    }
+
+    .menu {
+
+        &__link {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+
+        &__item:first-child::after {
+            padding: 0 0 0 1px;
+        }
+
+    }
+}
+
+@include laptop {
+    .container {
+        width: 76.8rem;
+    }
+
+    .head {
+
+        .container {
+            gap: 1rem;
+        }
+
+        &__adv p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        &__contact {
+            gap: 1rem;
+
+        }
+
+        &__phone {
+            font-size: 1.2rem;
+        }
+
+        &__btn {
+            padding: 1rem 1.8rem;
+            font-size: 1.2rem;
+
+
+            &::before {
+                padding: 0 4px 0 0;
+            }
+        }
+    }
+
+    .menu {
+
+        &__list {
+            padding: 2.8rem 0;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        &__link {
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+    
+        &__item:first-child::after {
+            position: absolute;
+            content: url('/img/triangle.png');
+            padding: 0 0 0 4px;
+        }
+    }
+}
+
+@include tablet {
+    
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+    .container {
+        width: 576px;
+    }
+
+    .head {
+        & .container {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 3rem;
+        }
+
+        &__contact {
+            gap: 10rem;
+        }
+
+        &__phone {
+            font-size: 2rem;
+        }
+
+        &__adv p {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+    }
+}
+
+@include mobile {
+
+    .container {
+        width: 320px;
+    }
+
+    .head {
+        & .container {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        &__menu {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        &__contact {
+            justify-content: space-evenly;
+            gap: 0.5rem;
+        }
+
+        &__phone {
+            font-size: 1.4rem;
+        }
+
+        &__adv p {
+            font-size: 1.2rem;
+        }
+
+        &__btn {
+            padding: 0.8rem 1rem;
+            font-size: 1.2rem;
+
+
+            &::before {
+                padding: 0 2px 0 0;
+            }
+        }
+    }
+
+    .burger {
+		top: 0.6rem;
+		display: block;
+		position: relative;
+		width: 4rem;
+		height: 2rem;
+		cursor: pointer;
+        margin-right: auto;
+	}
+
+	.burger__span,
+	.burger__span::after,
+	.burger__span::before {
+		position: absolute;
+		width: 100%;
+		height: 0.3rem;
+		background: #000000;
+	}
+
+	.burger__span::before {
+		content: "";
+		top: -8px;
+		transition: top 300ms 300ms, transform 00ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.burger__span::after {
+		content: "";
+		bottom: -8px;
+		transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.burger span.active:before {
+		content: "";
+		top: 0px;
+		transform: rotate(45deg);
+		transition: top 300ms, transform 400ms 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+	.burger span.active:after {
+		content: "";
+		bottom: 0;
+		transform: rotate(-45deg);
+		transition: bottom 300ms, transform 400ms 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+	.burger span.active {
+        background: rgba(255, 255, 255, 0);
+	}
+
+
+	.menu {
+		position: fixed;
+		left: -300rem;
+	}
+
+	.menu.animate {
+        flex-wrap: nowrap;
+		position: absolute;
+		transition: left 1s;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50vh;
+		z-index: 3000;
+		padding: 1rem;
+		background: $white;
+	}
+
+    .menu__list.flex {
+        flex-direction: column;
+        padding: 3rem;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+
+}

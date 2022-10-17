@@ -1,0 +1,27 @@
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.container {
+    max-width: 126rem;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
