@@ -13,19 +13,19 @@
     }
 
     &__list:first-child {
-        background: url('/img/digital-bg-1.png');
+        background: url('../img/digital-bg-1.png');
         // background-size: contain;
         background-repeat: no-repeat;
     }
 
     &__list:nth-child(2) {
-        background: url('/img/digital-bg-2.png');
+        background: url('../img/digital-bg-2.png');
         // background-size: contain;
         background-repeat: no-repeat;
     }
 
     &__list:nth-child(3) {
-        background: url('/img/digital-bg-3.png');
+        background: url('../img/digital-bg-3.png');
         // background-size: contain;
         background-repeat: no-repeat;
     }

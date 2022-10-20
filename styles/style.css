@@ -155,7 +155,7 @@ ul li {
   color: #FF5900;
 }
 .head__btn::before {
-  content: url("/img/phone.svg");
+  content: url("../img/phone.svg");
   padding: 0 8px 0 0;
   vertical-align: middle;
 }
@@ -183,7 +183,7 @@ ul li {
 }
 .menu__item:first-child::after {
   position: absolute;
-  content: url("/img/triangle.png");
+  content: url("../img/triangle.png");
   vertical-align: middle;
   padding: 0 0 0 10px;
 }
@@ -236,7 +236,7 @@ ul li {
   }
   .menu__item:first-child::after {
     position: absolute;
-    content: url("/img/triangle.png");
+    content: url("img/triangle.png");
     padding: 0 0 0 4px;
   }
 }
@@ -359,7 +359,7 @@ ul li {
   }
 }
 .banner {
-  background: url("/img/banner-bg.jpg");
+  background: url("../img/banner-bg.jpg");
   min-height: 71.6rem;
   background-position: 55% 0;
   background-repeat: contain;
@@ -515,15 +515,15 @@ ul li {
   min-height: 48.7rem;
 }
 .digital__list:first-child {
-  background: url("/img/digital-bg-1.png");
+  background: url("../img/digital-bg-1.png");
   background-repeat: no-repeat;
 }
 .digital__list:nth-child(2) {
-  background: url("/img/digital-bg-2.png");
+  background: url("../img/digital-bg-2.png");
   background-repeat: no-repeat;
 }
 .digital__list:nth-child(3) {
-  background: url("/img/digital-bg-3.png");
+  background: url("../img/digital-bg-3.png");
   background-repeat: no-repeat;
 }
 .digital__wrapper {
